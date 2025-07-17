@@ -19,7 +19,9 @@ if not file_name:
 base_name = file_name.replace('src_', '', 1)
 new_file_name = f"отчет_{base_name}"
 new_file_path = os.path.join(folder_path, new_file_name)
-
+#+++++++++++++++++++++++++++++
+print('test_123')
+#++++++++++++++++++++++++++++++
 # Открываем исходный файл и создаём новый файл на его основе
 with xw.App(visible=False) as app:
     wb_src = app.books.open(os.path.join(folder_path, file_name))
